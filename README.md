@@ -9,8 +9,8 @@
 ## Contents
 
 - [News](#news)
-- [Overview](#overview)
 - [Contents](#contents)
+- [Overview](#overview)
 - [Usage](#usage)
 - [Citation](#citation)
 
