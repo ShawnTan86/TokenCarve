@@ -4,7 +4,7 @@ If you have any questions, please contact Xudong Tan(shawntan@126.com).
 
 ## News
 
-🌟 **[2025/3/13]** Our work is now available on [arXiv](https://arxiv.org/auth/need-endorsement.php?tapir_dest=https%3A%2F%2Farxiv.org%2Fsubmit%2F6276999%2Fstart&category_id=cs.CV)!
+🌟 **[2025/3/13]** Our work is now available on [arXiv](https://arxiv.org/abs/2503.10501)!
 
 ---
 
@@ -48,15 +48,16 @@ Our code is currently being organized and will be released soon.
 If you use our code for your paper, please cite:
 
 ```bibtex
-@ARTICLE{10158936,
-  author={Tan, Xudong and Hu, Menghan and Zhai, Guangtao and Zhu, Yan and Li, Wenfang and Zhang, Xiao-Ping},
-  journal={IEEE Transactions on Multimedia}, 
-  title={Lightweight Video-Based Respiration Rate Detection Algorithm: An Application Case on Intensive Care}, 
-  year={2023},
-  volume={},
-  number={},
-  pages={1-15},
-  doi={10.1109/TMM.2023.3286994}
+@misc{tan2025tokencarve,
+  title={TokenCarve: Information-Preserving Visual Token Compression in Multimodal Large Language Models},
+  author={Tan, Xudong and Ye, Peng and Tu, Chongjun and Cao, Jianjian and Yang, Yaoxin and Zhang, Lin and Zhou, Dongzhan and Chen, Tao},
+  year={2025},
+  eprint={2503.10501},
+  archivePrefix={arXiv},
+  primaryClass={cs.CV},
+  doi={10.48550/arXiv.2503.10501},
+  url={https://doi.org/10.48550/arXiv.2503.10501},
+  note={Version 1, submitted on 13 Mar 2025}
 }
 ```
 
