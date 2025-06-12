@@ -39,7 +39,57 @@ Multimodal Large Language Models (MLLMs)  are becoming increasingly popular, whi
 
 ## Usage
 
-Our code is currently being organized and will be released soon.
+Usage: LLaVA + TokenCarve
+
+This is a usage example for the LLaVA version of TokenCarve.
+
+🛠 Step 1: Install LLaVA
+
+Follow the installation guide in the official ！[LLaVA](https://github.com/haotian-liu/LLaVA) repository.
+
+📁 Step 2: Integrate TokenCarve into LLaVA
+
+Place the TokenCarve_config directory into the root of your LLaVA folder. The resulting directory structure should look like this:
+
+LLaVA/
+├── TokenCarve_config/
+│   ├── config.py
+│   ├── configuration_llama.py
+│   ├── modeling_llama.py
+│   └── TokenCarve_model_vqa_loader.py
+├── LICENSE
+├── README.md
+├── cog.yaml
+├── docs/
+├── images/
+├── llava/
+├── llava.egg-info/
+├── playground/
+├── predict.py
+├── pyproject.toml
+├── scripts/
+└── ...
+
+
+🐍 Step 3: Activate the LLaVA Conda Environment
+
+conda activate llava
+
+📂 Step 4: Navigate to the LLaVA Directory
+
+cd LLaVA
+
+⚙️ Step 5: Run the TokenCarve Configuration Script
+
+python ./TokenCarve_config/config.py
+
+This script sets up TokenCarve-specific configurations, such as copying customized model files.
+
+🧪 Step 6: Run the VQA Loader Script
+
+python ./TokenCarve_config/TokenCarve_model_vqa_loader.py
+
+💡 You can modify the token_carve_image_token_nums parameter to control how many image tokens are used in computation.
 
 ---
 
