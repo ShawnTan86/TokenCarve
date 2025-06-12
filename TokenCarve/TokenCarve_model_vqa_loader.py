@@ -97,7 +97,6 @@ def eval_model(args):
     data_loader = create_data_loader(questions, args.image_folder, tokenizer, image_processor, model.config)
 
     ################# token_carve parameter start
-    model.config.use_fast_v = args.use_fast_v
     model.config.use_token_carve = args.use_token_carve
     model.config.token_carve_sys_length = args.token_carve_sys_length
     model.config.token_carve_image_token_length = args.token_carve_image_token_length
@@ -149,11 +148,11 @@ def eval_model(args):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument("--model-path", type=str, default="/remote-home/share/txd/EMLLM/MLLModels/llava7b")
+    parser.add_argument("--model-path", type=str, default="./llava7b")
     parser.add_argument("--model-base", type=str, default=None)
-    parser.add_argument("--image-folder", type=str, default="/remote-home/share/txd/EMLLM/MLLModels/LLaVA/playground/data/eval/textvqa/train_images")
-    parser.add_argument("--question-file", type=str, default="/remote-home/share/txd/EMLLM/MLLModels/LLaVA/playground/data/eval/textvqa/llava_textvqa_val_v051_ocr.jsonl")
-    parser.add_argument("--answers-file", type=str, default="/remote-home/share/txd/EMLLM/TokenCarve/TokenCarve_results/llava-v1.5-7b_original.jsonl")
+    parser.add_argument("--image-folder", type=str, default="./playground/data/eval/textvqa/train_images")
+    parser.add_argument("--question-file", type=str, default="./playground/data/eval/textvqa/llava_textvqa_val_v051_ocr.jsonl")
+    parser.add_argument("--answers-file", type=str, default="./TokenCarve_llava-v1.5-7b.jsonl")
     parser.add_argument("--conv-mode", type=str, default="vicuna_v1")
     parser.add_argument("--num-chunks", type=int, default=1)
     parser.add_argument("--chunk-idx", type=int, default=0)
@@ -163,8 +162,7 @@ if __name__ == "__main__":
     parser.add_argument("--max_new_tokens", type=int, default=128)
 
     ################# token_carve parameter start
-    parser.add_argument("--use-fast-v", default=False, action='store_true')
-    parser.add_argument("--use-token-carve", default=False, action='store_true')
+    parser.add_argument("--use-token-carve", default=False, action='store_true') # use TokenCarve
     parser.add_argument('--token-carve-sys-length', type=int, default=36)
     parser.add_argument('--token-carve-image-token-length', type=int, default=576)
     parser.add_argument('--token-carve-work-layer', type=int, default=2)
@@ -174,8 +172,6 @@ if __name__ == "__main__":
     ################# token_carve parameter ending
 
     args = parser.parse_args()
-
-    # args.use_token_carve = True
     print(args)
     eval_model(args)
 
