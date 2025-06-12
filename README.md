@@ -6,7 +6,7 @@ If you have any questions, please contact Xudong Tan(shawntan@126.com).
 
 🌟 **[2025/3/13]** Our work is now available on [arXiv](https://arxiv.org/abs/2503.10501)!
 
-🌟🌟 **[2025/3/12]** We released the source code of **[TokenCarve](https://github.com/ShawnTan86/TokenCarve/tree/main/TokenCarve)** to the public!
+🌟 **[2025/3/12]** We released the source code of **[TokenCarve](https://github.com/ShawnTan86/TokenCarve/tree/main/TokenCarve)** to the public!
 
 ---
 
