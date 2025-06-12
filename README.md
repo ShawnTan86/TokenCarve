@@ -46,7 +46,7 @@ This is a usage example for the LLaVA version of TokenCarve.
 🛠 **Step 1:** Install LLaVA  
 Follow the installation guide in the official [LLaVA](https://github.com/haotian-liu/LLaVA) repository.
 
-📁 **Step 2:** Integrate TokenCarve into LLaVA  
+📁 **Step 2:** Integrate [TokenCarve](https://github.com/ShawnTan86/TokenCarve/tree/main/TokenCarve) into LLaVA  
 Place the `TokenCarve_config` directory into the root of your LLaVA folder. The resulting directory structure should look like this:
 
 <pre><code>
