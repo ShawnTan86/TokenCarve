@@ -5,6 +5,7 @@ If you have any questions, please contact Xudong Tan(shawntan@126.com).
 ## News
 
 🌟 **[2025/3/13]** Our work is now available on [arXiv](https://arxiv.org/abs/2503.10501)!
+🌟🌟 **[2025/3/12]** We released the source code of **[TokenCarve](https://github.com/ShawnTan86/TokenCarve/tree/main/TokenCarve)** to the public!
 
 ---
 
@@ -70,30 +71,14 @@ LLaVA/
 └── ...
 </code></pre>
 
-🐍 **Step 3:** Activate the LLaVA Conda Environment  
+⚙️ **Step 3:** Getting Started with TokenCarve! 
 ```bash
 conda activate llava
-```
-
-📂 **Step 4:** Navigate to the LLaVA Directory  
-```bash
 cd LLaVA
-```
-
-⚙️ **Step 5:** Run the TokenCarve Configuration Script  
-```bash
 python ./TokenCarve_config/config.py
-```
-
-This script sets up TokenCarve-specific configurations, such as copying customized model files.
-
-🧪 **Step 6:** Run the VQA Loader Script  
-```bash
 python ./TokenCarve_config/TokenCarve_model_vqa_loader.py
 ```
-
 💡 You can modify the `token_carve_image_token_nums` parameter to control how many image tokens are used in computation.
-
 ---
 
 ## Citation
