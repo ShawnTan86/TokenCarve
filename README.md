@@ -45,14 +45,30 @@ This is a usage example for the LLaVA version of TokenCarve.
 
 🛠 Step 1: Install LLaVA
 
-Follow the installation guide in the official ！[LLaVA](https://github.com/haotian-liu/LLaVA) repository.
+Follow the installation guide in the official LLaVA repository.
 
 📁 Step 2: Integrate TokenCarve into LLaVA
 
 Place the TokenCarve_config directory into the root of your LLaVA folder. The resulting directory structure should look like this:
 
-<pre> ``` LLaVA/ ├── TokenCarve_config/ │ ├── config.py │ ├── configuration_llama.py │ ├── modeling_llama.py │ └── TokenCarve_model_vqa_loader.py ├── LICENSE ├── README.md ├── cog.yaml ├── docs/ ├── images/ ├── llava/ ├── llava.egg-info/ ├── playground/ ├── predict.py ├── pyproject.toml ├── scripts/ └── ... ``` </pre>
-
+LLaVA/
+├── TokenCarve_config/
+│   ├── config.py
+│   ├── configuration_llama.py
+│   ├── modeling_llama.py
+│   └── TokenCarve_model_vqa_loader.py
+├── LICENSE
+├── README.md
+├── cog.yaml
+├── docs/
+├── images/
+├── llava/
+├── llava.egg-info/
+├── playground/
+├── predict.py
+├── pyproject.toml
+├── scripts/
+└── ...
 
 🐍 Step 3: Activate the LLaVA Conda Environment
 
