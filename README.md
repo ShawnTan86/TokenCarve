@@ -51,24 +51,7 @@ Follow the installation guide in the official ！[LLaVA](https://github.com/haot
 
 Place the TokenCarve_config directory into the root of your LLaVA folder. The resulting directory structure should look like this:
 
-LLaVA/
-├── TokenCarve_config/
-│   ├── config.py
-│   ├── configuration_llama.py
-│   ├── modeling_llama.py
-│   └── TokenCarve_model_vqa_loader.py
-├── LICENSE
-├── README.md
-├── cog.yaml
-├── docs/
-├── images/
-├── llava/
-├── llava.egg-info/
-├── playground/
-├── predict.py
-├── pyproject.toml
-├── scripts/
-└── ...
+<pre> ``` LLaVA/ ├── TokenCarve_config/ │ ├── config.py │ ├── configuration_llama.py │ ├── modeling_llama.py │ └── TokenCarve_model_vqa_loader.py ├── LICENSE ├── README.md ├── cog.yaml ├── docs/ ├── images/ ├── llava/ ├── llava.egg-info/ ├── playground/ ├── predict.py ├── pyproject.toml ├── scripts/ └── ... ``` </pre>
 
 
 🐍 Step 3: Activate the LLaVA Conda Environment
