@@ -39,18 +39,17 @@ Multimodal Large Language Models (MLLMs)  are becoming increasingly popular, whi
 
 ## Usage
 
-Usage: LLaVA + TokenCarve
+### LLaVA + TokenCarve
 
 This is a usage example for the LLaVA version of TokenCarve.
 
-🛠 Step 1: Install LLaVA
+🛠 **Step 1:** Install LLaVA  
+Follow the installation guide in the official [LLaVA](https://github.com/haotian-liu/LLaVA) repository.
 
-Follow the installation guide in the official LLaVA repository.
+📁 **Step 2:** Integrate TokenCarve into LLaVA  
+Place the `TokenCarve_config` directory into the root of your LLaVA folder. The resulting directory structure should look like this:
 
-📁 Step 2: Integrate TokenCarve into LLaVA
-
-Place the TokenCarve_config directory into the root of your LLaVA folder. The resulting directory structure should look like this:
-
+<pre><code>
 LLaVA/
 ├── TokenCarve_config/
 │   ├── config.py
@@ -69,26 +68,31 @@ LLaVA/
 ├── pyproject.toml
 ├── scripts/
 └── ...
+</code></pre>
 
-🐍 Step 3: Activate the LLaVA Conda Environment
-
+🐍 **Step 3:** Activate the LLaVA Conda Environment  
+```bash
 conda activate llava
+```
 
-📂 Step 4: Navigate to the LLaVA Directory
-
+📂 **Step 4:** Navigate to the LLaVA Directory  
+```bash
 cd LLaVA
+```
 
-⚙️ Step 5: Run the TokenCarve Configuration Script
-
+⚙️ **Step 5:** Run the TokenCarve Configuration Script  
+```bash
 python ./TokenCarve_config/config.py
+```
 
 This script sets up TokenCarve-specific configurations, such as copying customized model files.
 
-🧪 Step 6: Run the VQA Loader Script
-
+🧪 **Step 6:** Run the VQA Loader Script  
+```bash
 python ./TokenCarve_config/TokenCarve_model_vqa_loader.py
+```
 
-💡 You can modify the token_carve_image_token_nums parameter to control how many image tokens are used in computation.
+💡 You can modify the `token_carve_image_token_nums` parameter to control how many image tokens are used in computation.
 
 ---
 
