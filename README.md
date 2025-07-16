@@ -76,8 +76,8 @@ LLaVA/
 ```bash
 conda activate llava
 cd LLaVA
-python ./TokenCarve_config/config.py
-python ./TokenCarve_config/TokenCarve_model_vqa_loader.py
+python ./TokenCarve/config.py
+python ./TokenCarve/TokenCarve_model_vqa_loader.py
 ```
 💡 You can modify the `token_carve_image_token_nums` parameter to control how many image tokens are used in computation.
 
