@@ -53,7 +53,7 @@ Place the `TokenCarve_config` directory into the root of your LLaVA folder. The 
 
 <pre><code>
 LLaVA/
-├── TokenCarve_config/
+├── TokenCarve/
 │   ├── config.py
 │   ├── configuration_llama.py
 │   ├── modeling_llama.py
